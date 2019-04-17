@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt,article]{ncc}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate}
+\usepackage{indentfirst,tabularx,colortbl}
+\usepackage{graphicx}
+\usepackage{fancybox,fancyhdr}
+\usepackage{rotating}
+
+\pagestyle{empty}
+
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=2.5cm}% левое поле
+\geometry{right=2.5cm}% правое поле
+\geometry{top=3cm}% верхнее поле
+\geometry{bottom=3cm}% нижнее поле
+
+\righthyphenmin=2
+%\clubpenalty=9999
+%\widowpenalty=9999
+
+\fancyhead[RE]{\No1\--2}
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{\No1\--2}
+\fancyhead[C]{\textsc{под знаменем марксизма}}
+\fancyfoot[R]{}
+\fancyfoot[C]{}
+\fancyfoot[L]{}
+
+\sectionstyle{center}%рубрики центрируются
+
+\begin{document}
+\include{title}
+\renewcommand\contentsname{Оглавление}
+\setcounter{page}{3}
+\tableofcontents
+\pagestyle{fancy}
+\include{red}
+\include{s1}
+\include{s2}
+\include{s3}
+\include{s4}
+\include{s5}
+\include{s6}
+\include{s7}
+\end{document}
